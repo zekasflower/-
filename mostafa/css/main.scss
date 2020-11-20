@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Rakkas&family=Cairo:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Cairo", sans-serif;
+  background-color: #f8f9fa;
+  // height: 2666px;
+}
+.gradient {
+  background: linear-gradient(-135deg, rgba(248, 249, 250, 1) 0%, #28a745 100%);
+}
+header {
+  bottom: 100px;
+  .navbar {
+    .navbar-brand {
+      font-family: "Rakkas", cursive;
+      font-size: 2.5rem;
+    }
+  }
+  .header-content {
+    .lead {
+      line-height: 2;
+    }
+  }
+  .wave {
+    position: relative;
+    top: 6px;
+  }
+}
+.content {
+  .services {
+    .tabs {
+      li {
+        cursor: pointer;
+        transition: 0.5s ease-out;
+        &.active,
+        &:hover {
+          color: #343a40 !important;
+        }
+        &:hover {
+          background-color: #eee;
+        }
+        &.active {
+          background: #28a74588;
+        }
+      }
+    }
+    .tabs-content {
+      & > div {
+        display: none;
+      }
+      .active {
+        display: block;
+      }
+    }
+  }
+  form {
+    .form-control {
+      background-color: transparent;
+      color: #343a40;
+      &:focus {
+        border-color: rgba(54, 167, 81, 0.75);
+        box-shadow: 0 0 0 0.2rem rgba(54, 167, 81, 0.25);
+      }
+    }
+    textarea {
+      resize: none;
+    }
+  }
+}
